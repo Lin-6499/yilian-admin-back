@@ -1,0 +1,14 @@
+{
+  "defaultContactName": "社区值班中心",
+  "defaultPhone": "15104086499",
+  "dialEnabled": false,
+  "note": "系统兜底热线",
+  "createdAt": "2026-05-06T09:50:07.007Z",
+  "updatedAt": "2026-05-06T09:50:09.439Z",
+  "updatedById": 8,
+  "updatedByName": "admin",
+  "updatedByRole": "admin",
+  "source": "file",
+  "configPath": "X:\\uniapp_project\\bs\\shared\\sos-config.json",
+  "loadError": null
+}
