@@ -5,7 +5,7 @@ const {
   readSosConfig,
   saveSosConfig,
   resolveSosTarget
-} = require('../../../shared/sos-config');
+} = require('../shared/sos-config');
 
 function requireAdmin(req, res) {
   if (req.user?.role !== 'admin') {
