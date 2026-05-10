@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
 const dotenv = require('dotenv');
-const { getJwtSecret } = require('../../../shared/jwt-secret');
+const { getJwtSecret } = require('../shared/jwt-secret');
 
 dotenv.config();
 

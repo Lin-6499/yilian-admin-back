@@ -20,8 +20,9 @@ const videosRoutes = require('./routes/videos');
 const adminProductsRoutes = require('./routes/products');
 const uploadRoutes = require('./routes/upload');
 const authMiddleware = require('./middleware/auth');
-const { getJwtSecret } = require('../../shared/jwt-secret');
+const { getJwtSecret } = require('./shared/jwt-secret');
 const fs = require('fs');
+const https = require('https')
 dotenv.config();
 
 const app = express();
@@ -155,6 +156,6 @@ const sslOptions = {
 };
 
 // Start server
-app.listen(PORT, () => {
-    console.log(`Admin Backend running on http://localhost:${PORT}`);
+https.createServer(sslOptions, app).listen(PORT, () => {
+    console.log(`✅ HTTPS 后端运行中：https://43.138.138.136:${PORT}`);
 });

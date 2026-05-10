@@ -74,7 +74,7 @@ router.post('/', upload.single('file'), async (req, res, next) => {
     }
 
     const baseUrl = process.env.BASE_URL || `${req.protocol}://${req.get('host')}`
-    const url = `${baseUrl}/uploads/${filename}`
+    const url = `/uploads/${filename}`
 
     return res.json({
         url,
